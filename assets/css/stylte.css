@@ -210,14 +210,15 @@ main {
 
 .general2 {
     display: flex;
-    padding-left: 80px;
+    padding: 80;
     justify-content: flex-start;    
 } 
 .text3 {
-    width: 110%;
+    width: 50%;
     font-size: 18px;
     font-weight: 400;
     line-height: 35px;
+    margin-left: 170px;
     font-family: OpenSans;
 }
 
