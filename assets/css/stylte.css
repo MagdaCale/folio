@@ -19,70 +19,123 @@ colors
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/*  main style  */
 h1, h2, h3 {
     font-weight: 400;
-    font-family: Athene;
     font-size: 160px;
-
+    font-family: Athene;
 }
 header {
     color: #042A5A;
     background-color: #EFE8D7;
 }
+/*   fixed top   */
 .top {
     left: 0;
     right: 0;
     position: fixed;
 }
-
-.firstLine {
-    padding: 0 30px;
-    border-bottom: 2px solid black;
+.topLine {
+    font-family: OpenSans;
+    font-size: 18px;
+    display: flex;
+    padding: 5px 50px 10px;
     justify-content: space-between;
-    display: flex;
+    border-bottom: 2px solid black;
+    text-shadow: 3px 1px 3px rgba(150, 150, 150, 1);    
 }
+/*   main header   */
 .headLine {
-    flex-direction: column;
-    align-items: center;
     display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 h1 {
-    justify-content: center;
+    margin: 0 70px;
+    padding-top: 80px;
     text-align: center;
-    padding: 20px;
-    text-decoration: 2px underline ;
+    justify-content: center;
+    text-shadow: 3px 1px 3px rgba(150, 150, 150, 1);    
 }
-.img {
-    padding: 50px;
+hr {
+    border: 1px solid black;
+}
+/*   Image + text   */
+
+.mainImg {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.text1 {
-    padding: 20px;
+.img {
+    padding-top: 40px;
 }
+/*   text unter img   */
+
+.text1 {
+    display: flex;
+}
+.text1 p {
+    margin-right: 150px;
+    font-family: Athene;
+    padding: 20px 0px 80px 0;
+    text-shadow: 3px 1px 3px rgba(150, 150, 150, 1);    
+}
+.text1 span {
+    font-family: OpenSans;
+}
+
+/* main, main style */
+
 main {
-    color: #7D2222;
+    font-family: OpenSans;
+    color: #282B29;
+    background-color: #F4C4C4;
 }
 .rosa {
     display: flex;
     flex-direction: column;
-    background-color: #F4C4C4;
     justify-content: space-between;
 }
 
-.info2 h2 {
-    margin: 0 5px;
-    flex-wrap: wrap;
+/*  page nr. + headline  */
+.pageNr {
+    font-weight: 400;
+    padding-top: 80px;
+    padding-left: 80px;
+    font-family: OpenSans;
+}
+.headline1 h2 {
+    width: 40%;
+    padding-top: 20px;
+    word-break: break-all;
 }
 
-.secondLine {
-    width: 50%;
-    align-self: flex-end;
+/*  general text  */
+
+.general {
+    display: flex;
+    padding-right: 80px;
+    justify-content: flex-end;    
 }
+.text2 {
+    width: 40%;
+    font-family: OpenSans;
+}
+.text2 p {
+    font-weight: 400;
+    line-height: 35px;
+}
+
+/* tabelle  */
+
 .tabelle {
     width: 50%;
-    padding-top: 50px;
+    font-size: 14px;
+    padding-top: 80px;
+    padding-right: 80px;
     align-self: flex-end;
 }
 .principle {
@@ -90,62 +143,152 @@ main {
     justify-content: flex-end;
     border-bottom: 1px solid black;
 }
+.principle p {
+    font-size: 16px;
+}
+
+/*  text in tabelle  */
 .word {
-    padding: 50px;
+    padding: 40px 0;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid black;
 }
-.logo {
-    width: 120px;
-    align-self: flex-end;
-
+.caption {
+    padding:10px;
 }
+.word span {
+    font-size: 21px;
+    padding-left: 15px;
+}
+.comment {
+    width: 15%;
+    display: block;
+    text-align: right;
+    word-break: initial;
+}
+
+/*   logo   */
+
+.logo {
+    padding: 70px;
+    display: flex;
+    align-self: flex-end;
+}
+.logo img {
+    width: 120px;
+}
+
+/* second main style  */
+
 .orangeBg {
+    color: #7D2222;
     background-color: #DEB873;
 }
+.headline2 {
+    display:flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.headline2 h2 {
+    width: 35%;
+    display: flex;
+    text-align: right;
+    padding: 20px 0 0 0;
+    word-break: break-all;
+}
+.pageNr2 {
+    display: flex;
+    font-weight: 400;
+    padding-top: 80px;
+    padding-right: 80px;
+    font-family: OpenSans;
+    justify-content: flex-end;
+}
+
+/*  ifno text   */
+
+.general2 {
+    display: flex;
+    padding-left: 80px;
+    justify-content: flex-start;    
+} 
+.text3 {
+    width: 110%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+    font-family: OpenSans;
+}
+
+
+/*  bilder und text  */
+
+
 .input {
     font-size: 64px;
     font-family: Athene;
-
-}
-
-.headline2 h2 {
-    justify-content: flex-end;
-    display: flex;
-}
-.info3 {
-    padding-bottom: 50px;
-    width: 30%;
-    align-self: flex-end;
 }
 .right {
     display: flex;
+    padding-bottom: 100px;
+    margin: 140px 100px 0 0;
     justify-content: flex-end;
 }
-.before::before {
-    content: "\A";
-    white-space: pre;
+.right p {
+    width: 50%;
+    margin-left: 190px;
 }
-
+.left {
+    display: flex;
+    margin-top: 100px;
+    padding: 0 95px 100px 0;
+    flex-direction: row-reverse;
+}
+.left p {
+    width: 38%;
+    margin-top: 50px;
+    text-align: right;
+}
+.imgL {
+    margin-left: 100px 0 0 140px;
+}
 .imgL, .imgR  {
-    width: 40%;
+    width: 50%;
 }
 
+
+/*   footer styling   */
 
 footer {
     color: #388883;
+    background-image: url('../img/Magnus.png');
     background-color: #D2D2D2;
+    background-blend-mode: multiply;
+}
+.headline3 {
+    width: 45%;
+    padding-top: 20px;
+    word-break: break-all;
+}
+.text4 {
+    margin: 50px;
+    word-break: keep-all;
+    font-size: 24px;
+    display: flex;
+    font-weight: 400;
+    line-height: 48px;
+    font-family: OpenSans;
+    justify-content: center;
+}
+.text4 p {
+    width: 32%;
 }
 
-.text3 {
-    width: 50%;
-    font-weight: 100;
-    font-size: 24px;
-    font-family: OpenSans;
-    flex-wrap: wrap;
-}
+/*   navigation    */
+
 nav {
+    padding: 70px;
     font-family: OpenSans;
     display: flex;
     flex-direction: column;
@@ -156,4 +299,8 @@ a {
     padding: 5px;
     color: #388883;
     text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
 }
