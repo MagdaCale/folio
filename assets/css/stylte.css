@@ -2,6 +2,10 @@
     font-family: Athene;
     src: url('../fonts/Athene.otf');
 }
+@font-face {
+    font-family: OpenSans;
+    src: url('../fonts/OpenSans-VariableFont_wdth\,wght.ttf');
+}
 
 
 /* 
@@ -10,3 +14,146 @@ colors
 
 */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3 {
+    font-weight: 400;
+    font-family: Athene;
+    font-size: 160px;
+
+}
+header {
+    color: #042A5A;
+    background-color: #EFE8D7;
+}
+.top {
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+.firstLine {
+    padding: 0 30px;
+    border-bottom: 2px solid black;
+    justify-content: space-between;
+    display: flex;
+}
+.headLine {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+h1 {
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    text-decoration: 2px underline ;
+}
+.img {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.text1 {
+    padding: 20px;
+}
+main {
+    color: #7D2222;
+}
+.rosa {
+    display: flex;
+    flex-direction: column;
+    background-color: #F4C4C4;
+    justify-content: space-between;
+}
+
+.info2 h2 {
+    margin: 0 5px;
+    flex-wrap: wrap;
+}
+
+.secondLine {
+    width: 50%;
+    align-self: flex-end;
+}
+.tabelle {
+    width: 50%;
+    padding-top: 50px;
+    align-self: flex-end;
+}
+.principle {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid black;
+}
+.word {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.logo {
+    width: 120px;
+    align-self: flex-end;
+
+}
+.orangeBg {
+    background-color: #DEB873;
+}
+.input {
+    font-size: 64px;
+    font-family: Athene;
+
+}
+
+.headline2 h2 {
+    justify-content: flex-end;
+    display: flex;
+}
+.info3 {
+    padding-bottom: 50px;
+    width: 30%;
+    align-self: flex-end;
+}
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+.before::before {
+    content: "\A";
+    white-space: pre;
+}
+
+.imgL, .imgR  {
+    width: 40%;
+}
+
+
+footer {
+    color: #388883;
+    background-color: #D2D2D2;
+}
+
+.text3 {
+    width: 50%;
+    font-weight: 100;
+    font-size: 24px;
+    font-family: OpenSans;
+    flex-wrap: wrap;
+}
+nav {
+    font-family: OpenSans;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: flex-end;
+}
+a {
+    padding: 5px;
+    color: #388883;
+    text-decoration: none;
+}
